@@ -28,6 +28,8 @@ body {
 
 img {
   width: 100%;
+  /* solo per fare risaltare l'immg qualunque venga generata     */
+  filter: brightness(0.8);
 }
 
 .over-items {
@@ -66,7 +68,7 @@ main {
 
 .card {
   position: relative;
-  margin: var(--space-m) var(--space-s);
+  margin: var(--space-s) var(--space-s);
 }
 .card img {
   display: block;
@@ -80,11 +82,32 @@ main {
 
 /* footer */
 footer {
+  background-color: darkslategray;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: 10vh;
+}
+
+.icon-bttn-fl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--space-s);
+}
+.icon-bttn-fl i {
+  font-size: var(--space-l);
+  margin-bottom: var(--space-s);
+}
+
+.end-bttn {
+  line-height: 10vh;
+  text-align: center;
+  padding: 0 30px;
+  color: red;
+  background-color: rgba(250, 250, 250, 0.8);
+  cursor: pointer;
 }
 
 /* flex */
@@ -96,6 +119,12 @@ footer {
 }
 .fl-justify-left {
   justify-content: end;
+}
+.fl-space-between {
+  justify-content: space-between;
+}
+.fl-align-center {
+  align-items: center;
 }
 .wrap {
   flex-wrap: wrap;
