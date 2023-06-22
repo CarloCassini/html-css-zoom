@@ -20,19 +20,44 @@
   min-height: var(--space-m);
   min-width: var(--space-m);
 }
-
+/* utility */
 body {
   background-color: black;
   color: white;
 }
 
+img {
+  width: 100%;
+}
+
+.over-items {
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: var(--space-s);
+  padding: var(--space-s);
+  border-radius: 5px;
+}
+
+/* header */
 .header-flex {
   display: flex;
   justify-content: end;
 }
-.header-items {
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: var(--space-s);
+
+/* main */
+
+.card {
+  position: relative;
+  margin: 30px 30px;
+}
+.card img {
+  display: block;
+}
+/* per posizionare il testo sopra una immagine */
+.card > .over-items {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 /* flex */
@@ -41,4 +66,7 @@ body {
 }
 .fl-justify-left {
   justify-content: end;
+}
+.wrap {
+  flex-wrap: wrap;
 }
