@@ -90,6 +90,13 @@ footer {
   height: 10vh;
 }
 
+.footer-bttn {
+  margin: 20px;
+}
+#green {
+  color: green;
+}
+
 .icon-bttn-fl {
   display: flex;
   flex-direction: column;
