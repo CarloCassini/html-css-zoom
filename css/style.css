@@ -31,7 +31,7 @@ img {
 }
 
 .over-items {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   background-color: rgba(255, 255, 255, 0.5);
   margin: var(--space-s);
   padding: var(--space-s);
